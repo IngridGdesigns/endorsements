@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <title>We are the Champions</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main id="container">
+            <img src="assets/freddie.png">
+            <h1 class="border">We are the Champions</h1>
+            <span id="error"></span>
+            <textarea id="text-area" class="box interFamily" rows="6" type="textarea" placeholder="Write endorsements here"></textarea>
+            <div class="input-row interFamily">
+                <input id="to-element" type="text" placeholder="To">
+                <input id="from-element" type="text" placeholder="From">
+            </div>
+            <button id="btn-el" class="box">Publish</button>
+            <h2 class="border">- Endorsements -</h2>
+            <div id="endorsements-list" class="interFamily"></div>
+        </main>
+        <script src="index.js" type="module"></script>
+        
+    </body>
+</html>
