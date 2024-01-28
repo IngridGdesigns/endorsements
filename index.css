@@ -26,6 +26,11 @@ button {
     padding: 20px;
 }
 
+button:hover {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
 .interFamily {
     font-family: Inter;
     font-style: normal;
@@ -65,7 +70,8 @@ input {
 #error {
     font-size: 14px;
     font-weight: 600;
-    color: salmon
+    color: salmon;
+    text-align: center;
 }
 
 img {
@@ -98,6 +104,10 @@ img {
     background-color: #FFF;
     font-size: 14px;
     padding: 0 0 0 10px;
+}
+
+#endorsements-list:hover h3, #endorsements-list:hover p{
+    background-color: aliceblue;
 }
 
 .border {
