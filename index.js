@@ -83,7 +83,7 @@ function addToEndorsementList(item){
     newEl.innerHTML = `<h3>To: ${to}</h3> <p>${endorsement}</p> <h3>From: ${from}</h3>`;
     
     newEl.addEventListener("click", function (){
-        const specificItemId = ref(database, `endorsement/${endorsementID}`);
+        const specificItemId = ref(database, `endorsements/${endorsementID}`);
         
         remove(specificItemId);
     })
