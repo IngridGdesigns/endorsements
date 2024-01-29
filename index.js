@@ -45,10 +45,20 @@ btnEl.addEventListener("click", function() {
         return;
     }
     
-    if(toPraised === "" || fromPraiser === ""){
-        error.textContent = "---- Please add name ----"
+    if(textArea && toPraised === "" && fromPraiser === ""){
+        error.textContent = "---- Please add names ----"
         return;
     }
+    
+    if(textArea && toPraised === "" && fromPraiser){
+        error.textContent = "---- Please add 'To' name ----"
+        return;
+    }
+    
+    if(textArea && toPraised && fromPraiser === ""){
+        error.textContent = "---- Please add 'From' name ----"
+        return;
+    } // error block probably needs to transform to switch statements
     
     error.textContent = "";
     
