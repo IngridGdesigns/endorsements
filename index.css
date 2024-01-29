@@ -24,11 +24,13 @@ button {
     background: #28A9F1;
     border: none;
     padding: 20px;
+    font-size: 22px;
 }
 
 button:hover {
-    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
-    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+    background: #0b78b4;
+    color: gold;
+    font-weight: 700;
 }
 
 .interFamily {
@@ -82,7 +84,7 @@ img {
     margin: 50px auto 0; 
 }
 
-#endorsements-list {
+ul {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -94,21 +96,34 @@ img {
     /* background-color: #FFF; */
 }
 
-#endorsements-list p {
+ul li {
+    background-color: #fff;
+    flex-grow: 1;
+}
+
+ul li:hover {
+    background-color: #c8eafc;
+}
+
+/* .background {
+    background: #fff;
+} */
+
+
+/* #endorsements-list p {
     background: #FFF;
     padding: 5px 10px;
     font-weight: 400
-}
+} */
 
-#endorsements-list h3 {
-    background-color: #FFF;
+/* #endorsements-list h3 {
     font-size: 14px;
     padding: 0 0 0 10px;
-}
+} */
 
-#endorsements-list:hover h3, #endorsements-list:hover p{
+/* #endorsements-list h3 p :hover{
     background-color: aliceblue;
-}
+} */
 
 .border {
     text-align: center;
@@ -122,3 +137,7 @@ h2 {
     font-weight: bold;
     
 }
+/*
+ background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+ box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+ */

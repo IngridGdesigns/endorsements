@@ -78,9 +78,10 @@ function addToEndorsementList(item){
 
     const {endorsement, to, from } = endorsementValue
     
-    let newEl = document.createElement("h3");
+    let newEl = document.createElement("li");
    
-    newEl.innerHTML = `<h3>To: ${to}</h3> <p>${endorsement}</p> <h3>From: ${from}</h3>`;
+    newEl.innerHTML = `<h3>To: ${to}</h3> ${endorsement} <h3>From: ${from}</h3>`;
+    newEl.style.padding = '5px 10px';
     
     newEl.addEventListener("click", function (){
         const specificItemId = ref(database, `endorsements/${endorsementID}`);
