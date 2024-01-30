@@ -25,12 +25,22 @@ button {
     border: none;
     padding: 20px;
     font-size: 22px;
+    font-weight: 700;
 }
 
 button:hover {
     background: #0b78b4;
     color: gold;
     font-weight: 700;
+}
+
+button:active {
+    font-size: 23px;
+}
+
+button:focus {
+    color: gold;
+    background-color: #0b78b4;
 }
 
 .interFamily {
