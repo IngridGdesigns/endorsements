@@ -16,6 +16,16 @@ html, body {
     background-color: black;
 }
 
+img {
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    margin: 50px auto 0;
+}
+
+/* typography */
+
 h2 {
     margin: 15px 0 5px 0;
 }
@@ -29,7 +39,6 @@ ul {
     color: black;
     padding: 20px;
     font-size: 14px;
-    /* background-color: #FFF; */
 }
 
 ul li {
@@ -58,13 +67,17 @@ ul li:hover {
     text-align: center;
 }
 
-
 .bold {
     font-weight: bold;
 }
 
-h2 {
-    margin-bottom: 0;
+/* error handling */
+
+#error {
+    font-size: 14px;
+    font-weight: 600;
+    color: salmon;
+    text-align: center;
 }
 
 /* Button */
@@ -90,7 +103,6 @@ button:focus {
     color: gold;
     background-color: #0b78b4;
 }
-
 
 /* inputs */
 textarea {
@@ -121,23 +133,6 @@ input {
     padding: 5px 5px;
     justify-content: space-evenly;
 }
-
-
-#error {
-    font-size: 14px;
-    font-weight: 600;
-    color: salmon;
-    text-align: center;
-}
-
-img {
-    align-items: center;
-    width: 90px;
-    height: 90px;
-    flex-shrink: 0;
-    margin: 50px auto 0; 
-}
-
 
 /*
  background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
