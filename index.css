@@ -115,27 +115,7 @@ ul li:hover {
     background-color: #c8eafc;
 }
 
-/* .background {
-    background: #fff;
-} */
-
-
-/* #endorsements-list p {
-    background: #FFF;
-    padding: 5px 10px;
-    font-weight: 400
-} */
-
-/* #endorsements-list h3 {
-    font-size: 14px;
-    padding: 0 0 0 10px;
-} */
-
-/* #endorsements-list h3 p :hover{
-    background-color: aliceblue;
-} */
-
-.border {
+.centerText {
     text-align: center;
 }
 
