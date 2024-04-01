@@ -1,6 +1,8 @@
 {
   "name": "endorsements",
-  "dependencies": {},
+  "dependencies": {
+    "dompurify": "^3.0.11"
+  },
   "devDependencies": {
     "vite": "latest"
   },

@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import * as DOMPurify from 'dompurify';
 
 const databaseURL = "https://we-are-the-champions-2024-default-rtdb.firebaseio.com/";
 
@@ -29,9 +30,9 @@ function clearListEl(){
 }
 
 btnEl.addEventListener("click", function() {
-    let textArea = inputTextArea.value;
-    const fromPraiser = inputFromElement.value;
-    const toPraised = inputToElement.value;
+    let textArea = DOMPurify.sanitize(inputTextArea.value);
+    const fromPraiser = DOMPurify.sanitize(inputFromElement.value);
+    const toPraised = DOMPurify.sanitize(inputToElement.value);
     
     const endorsement = {
         endorsement: textArea,
@@ -86,11 +87,11 @@ onValue(endorsementDatabase, function (snapshot) {
 function addToEndorsementList(item){
     const [endorsementID, endorsementValue] = item;
 
-    const {endorsement, to, from } = endorsementValue
+    const { endorsement, to, from } = DOMPurify.sanitize(endorsementValue);
     
     let newEl = document.createElement("li");
    
-    newEl.innerHTML = `<h3>To: ${to}</h3> ${endorsement} <h3>From: ${from}</h3>`;
+    newEl.innerHTML = DOMPurify.sanitize(`<h3>To: ${to}</h3> ${endorsement} <h3>From: ${from}</h3>`);
     newEl.style.padding = '5px 10px';
     
     newEl.addEventListener("click", function (){
