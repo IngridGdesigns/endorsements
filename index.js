@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
-import * as DOMPurify from 'dompurify';
+import DOMPurify from 'dompurify';
 
 const databaseURL = "https://we-are-the-champions-2024-default-rtdb.firebaseio.com/";
 
